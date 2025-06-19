@@ -1,9 +1,8 @@
 gsap.registerPlugin(ScrollTrigger);
 
-
 // === CONFIGURATION ===
 const frameCount = 540;
-const framePath = index => `http://localhost:5500/frames/${String(index).padStart(4, '0')}.webp`;
+const framePath = index => `https://cdn.jsdelivr.net/gh/Philippe-Gllrt/sequenced-image-on-scroll@latest/frames/${String(index).padStart(4, '0')}.webp`;
 
 const canvas = document.getElementById('sequence-canvas');
 const context = canvas.getContext('2d');
